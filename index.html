@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f3f0"><meta name="description" content="Configura as cores do Mag-stick e partilha a tua opinião.">
+<title>Configura o teu Mag-stick</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="styles.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"}}</script>
+</head>
+<body>
+<header class="topbar"><div class="brand-mark">M<span>·</span></div><div class="brand-copy"><span>TESTE DE PRODUTO</span><strong>MAG-STICK</strong></div><span class="prototype-tag">PROTÓTIPO</span></header>
+<main>
+<section class="intro"><p class="eyebrow">A TUA OPINIÃO CONTA</p><h1>Configura o teu<br><em>Mag-stick.</em></h1><p class="intro-copy">Experimenta combinações de cores e ajuda-nos a definir o visual da próxima versão.</p></section>
+<section class="viewer-card" aria-label="Visualizador 3D do produto">
+  <div class="viewer-head"><span>VISTA 3D</span><span class="drag-hint"><span class="dot"></span> Arrasta para rodar</span></div>
+  <div id="viewer"><div class="loading" id="loading"><span class="spinner"></span><span>A carregar modelo 3D…</span></div></div>
+  <div class="viewer-foot"><span id="model-status">Modelo original MSTICK</span><button id="reset-view" class="text-button" type="button">Repor vista ↺</button></div>
+  <div id="model-error" class="error hidden" role="alert"></div>
+</section>
+<section class="section">
+  <div class="section-heading"><div><p class="eyebrow">01 / PERSONALIZAÇÃO</p><h2>Escolhe as cores</h2></div><span class="muted">6 componentes</span></div>
+  <div id="component-controls" class="component-list"></div>
+</section>
+<section class="section preview-section">
+  <div class="section-heading"><div><p class="eyebrow">02 / A TUA ESCOLHA</p><h2>Resumo da combinação</h2></div></div>
+  <div id="color-summary" class="summary-grid"></div>
+</section>
+<section class="section feedback-section">
+  <div class="section-heading"><div><p class="eyebrow">03 / FEEDBACK</p><h2>Partilha a tua opinião</h2></div></div>
+  <form id="feedback-form">
+    <div class="field"><label for="participant">Identificador do participante / protótipo <span>opcional</span></label><input id="participant" name="participant" maxlength="60" placeholder="Ex.: Protótipo 03"></div>
+    <div class="field"><label for="rating">Quanto gostas desta combinação?</label><div class="rating-row" role="radiogroup" aria-label="Avaliação da combinação">
+      <label><input type="radio" name="rating" value="1" required><span>1</span></label><label><input type="radio" name="rating" value="2"><span>2</span></label><label><input type="radio" name="rating" value="3"><span>3</span></label><label><input type="radio" name="rating" value="4"><span>4</span></label><label><input type="radio" name="rating" value="5"><span>5</span></label>
+    </div><div class="rating-caption"><span>Nada</span><span>Adoro</span></div></div>
+    <div class="field"><label for="other-colors">Que outras cores gostarias de experimentar? <span>opcional</span></label><input id="other-colors" name="otherColors" maxlength="250" placeholder="Cores, acabamentos, combinações…"></div>
+    <div class="field"><label for="comments">Comentários sobre o design <span>opcional</span></label><textarea id="comments" name="comments" rows="3" maxlength="1200" placeholder="O que mudarias? O que funciona bem?"></textarea></div>
+    <p class="privacy-note">Não precisas de indicar o teu nome. As respostas são usadas para avaliar o design do produto.</p>
+    <button id="submit-button" class="submit-button" type="submit">Enviar a minha combinação <span>↗</span></button>
+    <p id="submit-status" class="submit-status" role="status" aria-live="polite"></p>
+  </form>
+</section>
+<footer><span>MAG-STICK / PRODUCT FEEDBACK</span><span>Obrigado por fazeres parte do teste.</span></footer>
+</main>
+<script type="module" src="app.js"></script>
+</body></html>
