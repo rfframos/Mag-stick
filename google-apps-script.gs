@@ -3,7 +3,7 @@
  * Cria uma Google Sheet, abre Extensões > Apps Script, cola este ficheiro
  * e substitui SHEET_ID pelo ID da folha. Publica como aplicação Web.
  */
-const SHEET_ID = 'COLOCA_AQUI_O_ID_DA_TUA_GOOGLE_SHEET';
+const SHEET_ID = '1UHQxjExwkjEIPHhLjXbOjIlQIXLMFjwP38LsRsphtAs';
 const TAB_NAME = 'Respostas';
 const COMPONENT_IDS = ['Garra','Botão','Interior','Interior_tampa','Exterior_tampa','Corpo'];
 
