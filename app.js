@@ -3,7 +3,7 @@ import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 // Altere aqui o endpoint publicado do Google Apps Script depois de o configurar.
-const CONFIG = { submissionEndpoint: 'COLOCA_AQUI_O_URL_DO_GOOGLE_APPS_SCRIPT' };
+const CONFIG = { submissionEndpoint: 'https://script.google.com/macros/s/AKfycbxttofzgcbm2urGOnNK_AbuDWmjTcq-rDPeRTrVpPsSDPhUMe9kqZb0PzLWbMy0Ec7cCw/exec' };
 const COMPONENTS = [
   { id:'Garra', label:'Garra', color:'#34383A' },
   { id:'Botão', label:'Botão', color:'#B8F36B' },
